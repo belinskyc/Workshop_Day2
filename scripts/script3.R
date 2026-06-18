@@ -12,16 +12,18 @@ plot1 = ggplot(data=weatherData) +
   geom_boxplot(mapping=aes(x=windDir, y=changeMaxTemp)) +
   theme_bw() +
   labs(title = "Change in Temperature vs. Wind Direction",
-       subtitle = "Lansing, Michigan: 2016",
+       subtitle = "Lansing, MI: 2016",
        x = "Wind Direction",
        y = "Change in Temperature (\u00B0F)");
 plot(plot1);
 
 ### Re-order the directions on the x-axis using factor(s)
 windDirOrdered = factor(weatherData$windDir,
-                        levels=c("North", "East", "South", "West"));
+                        levels=c("North", "East", 
+                                 "South", "West"));
 
 #### A Reordering the Boxplot ####
+### Nothing to say here ### 
 plot2 = ggplot(data=weatherData) +
   geom_boxplot(mapping=aes(x=windDirOrdered, y=changeMaxTemp)) +
   theme_bw() +
@@ -30,16 +32,6 @@ plot2 = ggplot(data=weatherData) +
        x = "Wind Direction",
        y = "Change in Temperature (\u00B0F)");
 plot(plot2);
-
-### Part 3: Changing Boxplot Axis ####
-plot3 = ggplot(data=weatherData) +
-  geom_boxplot(mapping=aes(x=changeMaxTemp, y=windDir)) +
-  theme_bw() +
-  labs(title = "Change in Temperature vs. Wind Direction",
-       subtitle = "Lansing, Michigan: 2016",
-       x = "Wind Direction",
-       y = "Change in Temperature (\u00B0F)");
-plot(plot3);
 
 set.seed(seed=12);
 ### Part 4: Add points in jittered form ####
