@@ -1,7 +1,7 @@
 rm(list=ls());                         # clear Environment tab
 library(package=ggplot2);              # get the GGPlot package
 
-### Change for error 2
+### Change for error 3
 #### Use application from boxplots2 #####
 
 # read in CSV file and save the content to weatherData
