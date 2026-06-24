@@ -1,6 +1,6 @@
 rm(list=ls());                         # clear Environment Window
 library(package=ggplot2);              # include all GGPlot2 functions
-<<<<<<< HEAD
+<<<<<<< HEA
 # change here -- ok
 =======
 # change
