@@ -4,3 +4,4 @@ cat("There is nothing to see here")
 cat("blah\n ... ")
 
 # Just another comment
+# test error 1
