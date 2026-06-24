@@ -5,3 +5,4 @@ cat("blah\n ... ")
 
 # Just another comment
 # error 2
+# test error 1
