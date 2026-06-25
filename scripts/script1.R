@@ -4,9 +4,7 @@ library(package=ggplot2);              # include all GGPlot2 functions
 weatherData = read.csv(file="data/weatherData.csv");
 
 #### Labels for the facets of the plot
-windLabels = c(Low = "Light Winds",
-               Medium = "Medium Winds",
-               High = "High Winds");
+windLabels = c(Low = "Light Winds", Medium = "Medium Winds", High = "High Winds");
 
 #### Boxplots of Change in Temperature vs. Wind Direction 
 #           at different wind speeds
