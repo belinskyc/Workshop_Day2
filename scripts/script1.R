@@ -4,7 +4,7 @@ library(package=ggplot2);              # include all GGPlot2 functions
 weatherData = read.csv(file="data/weatherData.csv");
 
 #### Labels for the facets of the plot
-windLabels = c(Low = "Light Winds",
+windLabels = c(Low = "L Winds",
                Medium = "Medium Winds",
                High = "Strong Winds");
 
