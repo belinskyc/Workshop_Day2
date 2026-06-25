@@ -1,10 +1,6 @@
 rm(list=ls());                         # clear Environment Window
 library(package=ggplot2);              # include all GGPlot2 functions
-<<<<<<< HE
-# change here -- ok
-=======
-# change
->>>>>>> 025a74252f92d5c82119e3dc2bec78e7df4f815a
+
 weatherData = read.csv(file="data/weatherData.csv");
 
 #### Labels for the facets of the plot
